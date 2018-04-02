@@ -37,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         //then create an object with constructor that accepts everything
         //and pass it to the second activity
-        Person person = new Person(name,age, isGraduated);
+        Person person = new Person(name, age, isGraduated);
 
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra(Keys.PERSON, (Serializable) person);
+
         startActivity(intent);
 
     }

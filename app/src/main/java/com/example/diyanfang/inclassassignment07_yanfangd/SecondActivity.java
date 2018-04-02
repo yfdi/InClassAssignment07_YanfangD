@@ -23,7 +23,7 @@ public class SecondActivity extends AppCompatActivity {
 
         displayText =  (TextView) findViewById(R.id.display_text);
 
-        //passing object from main activity to second activity
+        //getting object from main activity to second activity
         Intent intent = getIntent();
         Person per = (Person) intent.getSerializableExtra(Keys.PERSON);
 

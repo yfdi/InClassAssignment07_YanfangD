@@ -1,10 +1,12 @@
 package com.example.diyanfang.inclassassignment07_yanfangd;
 
+import java.io.Serializable;
+
 /**
  * Created by diyanfang on 4/1/18.
  */
 
-public class Person {
+public class Person implements Serializable{
 
     private String name;
     private int age;
@@ -42,7 +44,7 @@ public class Person {
     }
 
     public String toString(){
-        return "Name: " + name + "\nAge: " + age + "\nIs graduated?" + isGraduated;
+        return "Name: " + name + "\nAge: " + age + "\nIs graduated? " + isGraduated;
     }
 
 
