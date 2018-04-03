@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nameText = findViewById(R.id.name_editText);
-        ageText = findViewById(R.id.age_editText);
-        isGraduatedText = findViewById(R.id.isGraduated_checkbox);
+        nameText = findViewById(R.id.name_text);
+        ageText = findViewById(R.id.age_text);
+        isGraduatedText = findViewById(R.id.is_graduated_checkbox);
     }
 
     public void submit(View view){
