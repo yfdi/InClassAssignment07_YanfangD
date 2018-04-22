@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText nameText;
     EditText ageText;
-    CheckBox isGraduatedText;
+    CheckBox isGraduatedCheckBox;
 
     String name;
     int age;
@@ -26,14 +26,14 @@ public class MainActivity extends AppCompatActivity {
 
         nameText = findViewById(R.id.name_text);
         ageText = findViewById(R.id.age_text);
-        isGraduatedText = findViewById(R.id.is_graduated_checkbox);
+        isGraduatedCheckBox = findViewById(R.id.is_graduated_checkbox);
     }
 
     public void submit(View view){
 
         name = nameText.getText().toString();
         age = Integer.parseInt(ageText.getText().toString());
-        isGraduated = Boolean.valueOf(isGraduatedText.getText().toString());
+        isGraduated = isGraduatedCheckBox.isChecked();
 
         //then create an object with constructor that accepts everything
         //and pass it to the second activity
